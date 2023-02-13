@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import img from './Assest/img.jpg'
+import Navbar from './component/Navbar'
 
 function App() {
 
@@ -37,7 +38,8 @@ function App() {
 
   return (
     <div className='p-2'>
-      <div className='d-flex'>
+      <Navbar />
+      <div className='d-flex mt-4'>
         <img src={img} alt="..." className="img-thumbnail " style={{width:'300px',height:'300px',objectFit:'cover'}} />
         <div className='w-75 contant'>
           <h3>James Smith</h3>
